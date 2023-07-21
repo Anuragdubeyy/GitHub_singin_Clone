@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.main-container main {
+    color: #E6EDF3;
+}
+
+.header {
+    /* display: flex;
+    justify-content: center; */
+
+    padding: 32px 0 24px 0 ;
+}
+
+.header svg {
+    fill: #fff;
+}
+
+.auth-form-header p {
+    text-align: center;
+    color: #E6EDF3;
+
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+}
+
+.main-container .error-container {
+    display: flex;
+    justify-content: center;
+
+    width: 309px;
+    height: 55px;
+
+    margin: 15px 0 8px;
+    padding: 16px;
+
+    /* background-image: linear-gradient( var(#631c03), var(#) ); */
+    background: linear-gradient(var(rgba(248,81,73,0.1)), var(rgba(248,81,73,0.1)));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(248,81,73,0.4);
+    border-radius: 6px;
+
+    display: none;
+}
+
+.main-container .auth-form {
+    background: #161B22;
+    border-radius: 5px;
+    border: 1px solid #21262d;
+    margin-top: 15px;
+
+    width: 308px;
+    height: 248.4px;
+}
+
+.main-container .auth-form .auth-form-body {
+    padding: 16px;   
+}
+
+.main-container .auth-form .auth-form-body form .label {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container .auth-form .auth-form-body form input {
+    font-family: inherit;
+
+    background: #0d1117;
+    color: #E6EDF3;
+
+    border: 0.5px solid rgba(255,2555,255,0.3);
+    outline: none;
+    border-radius: 5px;
+    
+    width: 100%;
+
+    padding:6px;
+    margin-top:4px ;
+    margin-bottom: 16px;
+}
+
+.main-container .auth-form .auth-form-body form input:focus {
+    border: 1.5px double #2F81F7;
+}
+
+.main-container .auth-form .auth-form-body .password-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 0 8px;
+}
+
+.main-container .auth-form .auth-form-body .password-container a {
+    color: #2F81F7;
+    text-decoration: none;
+}
+
+.main-container .auth-form .auth-form-body input[type="password"] {
+    width: 100%;
+    
+    background: #0d1117;
+    color: #E6EDF3;
+    
+    outline: none;
+    border: 0.5px solid rgba(255,2555,255,0.3);
+    border-radius: 5px;
+    
+    margin-top:4px ;
+    margin-bottom: 16px;
+    padding: 6px;
+
+}
+
+.main-container .auth-form .auth-form-body input[type="password"]:focus {
+    border: 1.5px double #2F81F7;
+}
+
+.main-container .auth-form .auth-form-body input[type="submit"] {
+    cursor: pointer;
+    
+    margin-top: 10px;
+    padding: 6px 16px;
+
+    width: 100%;
+
+    background-color: #238636;
+    color: white;
+    border: none;
+    outline: none;
+
+    border-radius: 5px;  
+    
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.main-container .auth-form .auth-form-body input[type="submit"]:hover {
+    background-color: #2EA043;
+}
+
+.main-container .auth-form-footer {
+    margin: 16px 0 10px;
+    padding: 16px;
+
+    width: 308px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+.main-container .auth-form-footer a {
+    color: #2F81F7;
+    text-decoration: none;
+}
+
+.main-container .auth-form-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin: 30px 0 0;
+    padding: 40px 20px;
+}
+
+.footer ul {
+    list-style: none;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row-re;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer ul li a {
+    color: #2F81F7;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer ul li .contact-github {
+    color: #7D8590;
+}
